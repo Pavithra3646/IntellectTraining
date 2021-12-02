@@ -9,16 +9,16 @@ public class Target_Turns {
      Scanner sc=new Scanner(System.in);
 		
 		int trun=0,count=0;
-		System.out.print("Enter turns count :");
-		
+		System.out.println("Enter turns count : ");
 		while(sc.hasNext()) {
-			System.out.print("Enter turns count : ");
+		
 			trun+=sc.nextInt();
 			count++;
 			if(trun>=target) {
 				break;
 				 
-			}
+			}else
+				System.out.println("Enter turns count : ");
 			
 		}
 		System.out.print("Number of Truns :"+count);
