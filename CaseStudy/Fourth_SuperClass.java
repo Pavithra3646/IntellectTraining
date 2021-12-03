@@ -44,12 +44,12 @@ class Address{
 		return street+","+city+"-"+pincode;
 	}
 }
-class Customer1{
+class Customer{
 	String name;
 	Address address;
-	Customer1(){}
+	Customer(){}
 	
-	Customer1(String name, Address address) {
+	Customer(String name, Address address) {
 		super();
 		this.name = name;
 		this.address = address;
@@ -99,7 +99,7 @@ public class Main2 {
 
 
 		}
-		catch(InputMismatchException iME) {
+		catch(InputMismatchException exception) {
 			System.out.println("Given value is not valid!!! Please give valid input");
 		}
 
