@@ -1,17 +1,18 @@
 package case_Studys;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-class Task_Address {
+class Address1 {
 	private String addressLine1;
 	private String addressLine2;
 	private String city;
 	private String state;
 	private Integer pincode;
 
-	Task_Address(){
+	Address1(){
 
 	}
-	Task_Address(String addressLine1, String addressLine2, String city,String state, Integer pincode){
+
+void address1(String addressLine1, String addressLine2, String city,String state, Integer pincode){
 		this.addressLine1=addressLine1;
 		this.addressLine2=addressLine2;
 		this.city=city;
@@ -72,23 +73,22 @@ class Task_Address {
 public class Main4 {
 	static Scanner sc=new Scanner(System.in);
 	public static void main(String args[]){
-		Task_Address ad = null;
-		ad=new Task_Address();
+		Address1 addressObj=new Address1();
 
 		try {
 			System.out.println("Enter Address Line 1: ");
-			ad.setAddressLine1(sc.nextLine());
+			addressObj.setAddressLine1(sc.nextLine());
 			System.out.println("Enter Address Line 2: ");
-			ad.setAddressLine2(sc.nextLine());
+			addressObj.setAddressLine2(sc.nextLine());
 			System.out.println("Enter the City Name: ");
-			ad.setCity(sc.nextLine());
+			addressObj.setCity(sc.nextLine());
 			System.out.println("Enter the State Name: ");
-			ad.setState(sc.nextLine());
+			addressObj.setState(sc.nextLine());
 			System.out.println("Enter the Pincode: ");
-			ad.setPincode(sc.nextInt());
+			addressObj.setPincode(sc.nextInt());
 
 
-			System.out.println("The Address Details are\n"+ad.toString());
+			System.out.println("The Address Details are\n"+addressObj.toString());
 		}
 		catch(InputMismatchException exception) {
 			System.out.println("Input is valid!!! Give valid input");
